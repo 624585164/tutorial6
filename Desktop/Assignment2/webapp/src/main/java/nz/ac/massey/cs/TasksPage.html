@@ -1,0 +1,125 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body>
+
+<div id="body">
+	<header>
+		<h1>Todos</h1>
+	</header>
+
+	<!--div id="content" wicket:id="contentComponent">content
+	</div-->
+
+	<h2>New Task</h2>
+
+
+	<form wicket:id="entryForm">
+		<div><label>Name </label><input
+				wicket:id="name"
+				type="text" style="width: 15em" /></div>
+		<div><label>Description </label><input
+				wicket:id="description" type="text" style="width: 30em"
+		/></div>
+		<div><label>date </label><input
+				wicket:id="date"
+				type="text" style="width: 15em" /></div>
+		<div><label>title </label><input
+				wicket:id="title"
+				type="text" style="width: 15em" /></div>
+		<div><input type="submit" value="Add" /></div>
+	</form>
+
+	<hr>
+
+	<h2>Task List</h2>
+
+	<form wicket:id="listForm">
+
+	<table>
+		<tr wicket:id="task_list">
+			<td>
+				<input class="toggle" type="checkbox" wicket:id="completed" />
+				<span wicket:id="name">Name</span>
+				<span wicket:id="description">Description</span>
+				<span wicket:id="date">Data</span>
+				<span wicket:id="title">Title</span>
+			
+
+			</td>
+		</tr>
+	</table>
+
+	</form>
+
+	<a href="#" wicket:id="selectAll">Select all</a>
+	<a href="#" wicket:id="delAll">Clear completed</a>
+	<hr>
+	
+	<h2>Filter</h2>
+	<a href="#" wicket:id="comed">completed tasks</a>
+	<a href="#" wicket:id="active">active tasks</a>
+	<a href="#" wicket:id="all">all tasks</a>
+	<form wicket:id="listForm2">
+
+	<table>
+		<tr wicket:id="task3">
+			<td>
+				<input class="toggle" type="checkbox" wicket:id="completed" />
+				<span wicket:id="name">Name</span>
+				<span wicket:id="description">Description</span>
+				<span wicket:id="date">Date</span>
+				<span wicket:id="title">Title</span>
+			
+
+			</td>
+		</tr>
+	</table>
+
+	</form>
+
+	
+	
+	<hr>
+	<h2>number of incompleted tasks</h2>
+	<lable wicket:id="innum"></lable>
+	<form wicket:id="numform">
+            <input type="submit" value="update"/>  
+        </form>
+	<hr>
+	<h2>persistence</h2>
+		<a href="#" wicket:id="save">save</a>
+        <a href="#" wicket:id="show">show</a>
+        <form wicket:id="listForm3">
+
+	<table>
+		<tr wicket:id="com_task">
+			<td>
+				<input class="toggle" type="checkbox" wicket:id="completed" />
+				<span wicket:id="name">Name</span>
+				<span wicket:id="description">Description</span>
+				<span wicket:id="date">Data</span>
+				<span wicket:id="title">Title</span>
+			
+
+			</td>
+		</tr>
+	</table>
+
+	</form>
+	<hr>
+	<h2>environment</h2>
+	<span wicket:id="environment"></span>
+	
+	<hr>
+	<footer>
+		<div id="datetime" wicket:id="datetime">
+		</div>
+	</footer>
+
+</div>
+</body>
+</html>
